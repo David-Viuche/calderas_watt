@@ -12,7 +12,7 @@ export const Header = ({children}) => {
   }
 
   return (
-    <header className='bg-white text-lg text-slate-400 flex flex-col w-full h-auto sm:flex-row sm:justify-around sm:h-auto'>
+    <header className='bg-white text-lg flex flex-col w-full h-auto sm:flex-row sm:justify-around sm:h-auto'>
       <div className='flex justify-between items-center p-3'>
         <h2 className='sm:-m-0'>
           <a href='/' className='sm:bg-white w-auto'>
@@ -37,7 +37,7 @@ export const Header = ({children}) => {
           <HeaderLink href='/' ariaLabel='redirección a la página principal'>Inicio</HeaderLink>
           <HeaderLink href='/contacto' ariaLabel='redirección a la pagina de contacto'>Contacto</HeaderLink>
           <HeaderLink href='/agendar' ariaLabel='redirección a la página para agendar revisión'>Agendamiento</HeaderLink>
-          <HeaderLink href='https://www.instagram.com/watt_col/' target='_blank' ariaLabel='redirección al perfil de isntagram oficial'><TfiInstagram className='h-8 w-8' /></HeaderLink>
+          <HeaderLink href='https://www.instagram.com/watt_col/' target='_blank' ariaLabel='redirección al perfil de instagram oficial'><TfiInstagram className='h-8 w-8' /></HeaderLink>
         </ul>
       </nav>
     </header>

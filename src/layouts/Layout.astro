@@ -1,4 +1,5 @@
 ---
+import Footer from '../components/Footer.astro';
 import { Header } from '../components/Header';
 
 export interface Props {
@@ -17,10 +18,13 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-green-200 h-screen flex flex-col justify-between">
+	<body class="bg-slate-300 h-screen flex flex-col justify-between items-center text-slate-600">
 		<Header client:load>
 			<img class="bg-white rounded-[50%] w-14 sm:w-20" src="/logo.png" alt="logo de la empresa">
 		</Header>
-		<slot />
+		<main class="bg-green-200 sm:w-5/6 h-full">
+			<slot />
+		</main>
+		<Footer></Footer>
 	</body>
 </html>

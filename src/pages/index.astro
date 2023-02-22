@@ -3,11 +3,12 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Calderas Watt">
-	<main class="flex justify-center flex-col items-center p-2 sm:p-20">
-		<h1 class="text-3xl font-bold text-slate-700 m-2 mb-8">Calderas  <span class="text-gradient">Watt</span></h1>
-		<img src="/principal.svg" alt="ilustración principal mundo y persona">
+	<main class="flex justify-center flex-col items-center p-2 sm:px-20 ">
+		<img class="sm:max-w-xl m-5" src="/principal.svg" alt="ilustración principal mundo y persona">
+		<h1 class="text-3xl font-bold text-slate-700 m-2 sm:m-8">Calderas  <span class="text-gradient">Watt</span></h1>
 	</main>
-	<section class="flex justify-center flex-col items-center p-2 sm:p-20">
-		<p class="text-slate-500">Estamos trabajando...</p>
+	<section class="flex justify-center flex-col p-5 items-center sm:px-20 sm:text-xl text-lg">
+		<p class="text-justify">Tenemos el servicio técnico y fabrica de calderas a gas y eléctricas para hoteles, hospitales e industria en general.</p>
+		<a href="/contacto" class="m-8 rounded bg-sky-900 hover:bg-sky-700 text-white px-4 py-2">Contacto</a>
 	</section>
 </Layout>
