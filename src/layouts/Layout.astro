@@ -22,9 +22,9 @@ const { title } = Astro.props;
 		<Header client:load>
 			<img class="bg-white rounded-[50%] w-14 sm:w-20" src="/logo.png" alt="logo de la empresa">
 		</Header>
-		<main class="bg-green-200 sm:w-5/6 h-full">
+		<main class="bg-green-200 sm:w-5/6 flex flex-col gap-10 h-auto">
 			<slot />
 		</main>
-		<Footer></Footer>
+		<Footer />
 	</body>
 </html>
