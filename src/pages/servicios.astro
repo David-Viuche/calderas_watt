@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Service from "../components/Service.astro";
+---
+<Layout title="Contacto">
+    <main class="flex flex-col justify-center items-center">
+        <section class="shadow-md w-full flex flex-col justify-center gap-16 items-center p-5 py-36 text-center">
+            <h1 class="text-3xl font-semibold text-slate-700 m-2 sm:m-8 drop-shadow-2xl">Nuestros Servicios</h1>
+            <div class="flex flex-col lg:flex-row justify-between m-5">
+                <Service title='Mantenimiento General' link='/contacto' img='/gear.svg' desc='Mantenemos tus equipos al día' />
+                <Service title='Diseño personalizado' link='/contacto' img='/gear_2.svg' desc='Diseñamos equipos personalizados' />
+                <Service title='Remodelación' link='/contacto' img='/pluma.svg' desc='Actualizamos tus equipos actuales' />
+            </div>
+        </section>
+    </main>
+</Layout>
