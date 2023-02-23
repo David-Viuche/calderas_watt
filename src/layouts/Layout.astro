@@ -1,6 +1,7 @@
 ---
 import Footer from '../components/Footer.astro';
 import { Header } from '../components/Header';
+import { BsWhatsapp } from 'react-icons/bs/index.js'
 
 export interface Props {
 	title: string;
@@ -19,6 +20,9 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="bg-slate-300 h-screen flex flex-col justify-between items-center text-slate-600">
+		<a class="fixed bottom-32 right-2 sm:right-10 hover:scale-110" target="_blank" href="https://api.whatsapp.com/send?phone=573214076345&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20">
+			<BsWhatsapp className="w-14 h-14 bg-green-500 shadow-2xl  text-white rounded-2xl p-2"/>
+		</a>
 		<Header client:load>
 			<img class="bg-white rounded-[50%] w-14 sm:w-20" src="/logo.png" alt="logo de la empresa">
 		</Header>
