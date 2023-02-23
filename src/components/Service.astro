@@ -1,0 +1,17 @@
+---
+export interface Props {
+	title: string;
+    link: string;
+    img: string;
+    desc: string;
+}
+
+const { title, link, img, desc } = Astro.props;
+---
+<section class="flex justify-center flex-col p-5 items-center sm:px-20 md:px-10 sm:text-xl text-lg">
+    <a href={link} class="py-2 border-b-2 hover:text-black font-semibold hover:border-black border-slate-400 flex flex-col justify-center items-center">
+        <img src={img} alt="icono de teclado " class="aspect-video w-40">
+        <h3 class="text-center">{title}</h3>
+    </a>
+    <p class="font-mono text-sm p-4 text-center">{desc}</p>
+</section>
