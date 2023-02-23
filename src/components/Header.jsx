@@ -36,7 +36,7 @@ export const Header = ({children}) => {
         <ul className='flex flex-col justify-center items-center gap-5 text-center w-full sm:flex-row sm:h-14'>
           <HeaderLink href='/' ariaLabel='redirección a la página principal'>Inicio</HeaderLink>
           <HeaderLink href='/contacto' ariaLabel='redirección a la pagina de contacto'>Contacto</HeaderLink>
-          <HeaderLink href='/agendar' ariaLabel='redirección a la página para agendar revisión'>Agendamiento</HeaderLink>
+          <HeaderLink href='/servicios' ariaLabel='redirección a la página de servicios'>Servicios</HeaderLink>
           <HeaderLink href='https://www.instagram.com/watt_col/' target='_blank' ariaLabel='redirección al perfil de instagram oficial'><TfiInstagram className='h-8 w-8' /></HeaderLink>
         </ul>
       </nav>

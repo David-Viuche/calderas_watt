@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { BsWhatsapp } from 'react-icons/bs/index.js'
+---
+<Layout title="Contacto">
+    <main class="flex flex-col justify-center items-center ">
+        <section class="shadow-md w-full flex flex-col justify-around gap-10 items-center p-5 text-center">
+            <h1 class="text-3xl font-semibold text-slate-700 m-2 sm:m-8 drop-shadow-2xl">Contáctanos</h1>
+            <img class="sm:max-w-xl m-5" src="/telefono.svg" alt="ilustracion persona hablando por telefono">
+            <p>Cuéntanos tu problema y te daremos la mejor solución disponible en nuestro catálogo</p>
+            <a class="flex items-center m-8 sm:right-10 hover:scale-110" target="_blank" href="https://api.whatsapp.com/send?phone=573214076345&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20">
+                <BsWhatsapp className="w-14 h-14 bg-slate-500 shadow-2xl  text-white rounded-2xl p-2"/>
+                <h4 class="text-2xl text-slate-500 m-2 sm:m-8">(+57) 3214076345</h4>
+            </a>
+        </section>
+    </main>
+</Layout>
